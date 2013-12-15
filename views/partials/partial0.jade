@@ -1,0 +1,17 @@
+.row
+		div(data-ng-app="filesExplorer")
+			.col-lg-12
+				input(type="text", data-ng-model="cityName", placeholder="Search files...")
+				div(data-ng-controller="DestinationController")
+					a(ng-click="FilterType('')") All 
+						a(ng-click="FilterType('video')") video 
+						a(ng-click="FilterType('info')") info 
+						a(ng-click="FilterType('ppt')") ppt 
+					hr
+					ul	
+						li(data-ng-repeat="deals in filteredDestinations | startFrom:(currentPage - 1)*pageSize | limitTo:pageSize | filter:filters" )  
+							div(class="type-{{deals.type}}"){{deals.title}} 
+					
+
+					br 
+					pagination(rotate="true", num-pages="noOfPages", current-page="currentPage", max-size="maxSize", class="pagination-small", boundary-links="true")

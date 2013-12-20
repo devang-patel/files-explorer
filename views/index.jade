@@ -1,29 +1,29 @@
 extends layout
 
 block body
-  .navbar.navbar-default.navbar-fixed-top(role="navigation")
+  .navbar.navbar-default.navbar-fixed-top.box(role="navigation")
     .navbar-header
       button.navbar-toggle(type="button", data-toggle="collapse", data-target=".navbar-ex1-collapse")
         span.sr-only Toggle navigation
         span.icon-bar
         span.icon-bar
         span.icon-bar
-      a.navbar-brand(href="#") Brand
+      a.navbar-brand(href="view")
+        img(src="images/logo.png", width="271", height="43")
     
     .collapse.navbar-collapse.navbar-ex1-collapse
       ul.nav.navbar-nav
         li
-          a(href="view1") View1
+          a(href="view1") About
         li  
-          a(href="view2") View2 
+          a(href="view2") News 
+
   .container      
-    div
-      .jumbotron  
-        h1 Hello World!
+    div.cf
       div(ng-view)
     hr  
-    div
-      | Angular seed app: v
+    div.footer
+      | © 2013. StartupLabs.
       span(app-version)
 
   script(src='js/lib/angular/angular.js')

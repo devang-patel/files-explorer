@@ -1,17 +1,53 @@
-.row
-		div(data-ng-app="filesExplorer")
-			.col-lg-12
-				input(type="text", data-ng-model="cityName", placeholder="Search files...")
-				div(data-ng-controller="DestinationController")
-					a(ng-click="FilterType('')") All 
-						a(ng-click="FilterType('video')") video 
-						a(ng-click="FilterType('info')") info 
-						a(ng-click="FilterType('ppt')") ppt 
-					hr
-					ul	
-						li(data-ng-repeat="deals in filteredDestinations | startFrom:(currentPage - 1)*pageSize | limitTo:pageSize | filter:filters" )  
-							div(class="type-{{deals.type}}"){{deals.title}} 
-					
+.row.cf
+		div(data-ng-app="filesExplorer", data-ng-controller="DestinationController", class="cf")
+			div(class="cat-nav")
+				ul 
+					li
+						a(ng-click="FilterType('')", class="active") All 
+					li
+						a(ng-click="FilterCate('fundraising')") Fundraising  
+					li
+						a(ng-click="FilterCate('hr')") HR 
+					li
+						a(ng-click="FilterCate('legal')") Legal 
+					li
+						a(ng-click="FilterCate('taxation')") Taxation   
+					li
+						a(ng-click="FilterCate('finance')") Finance 
+					li  
+						a(ng-click="FilterCate('do-dont')") Dos & Donts   
+					li
+						a(ng-click="FilterCate('startups')") Startups  
+					li
+						a(ng-click="FilterCate('design')") Design  
+					li
+						a(ng-click="FilterCate('misc')") Misc  
 
-					br 
-					pagination(rotate="true", num-pages="noOfPages", current-page="currentPage", max-size="maxSize", class="pagination-small", boundary-links="true")
+			div(class="main-content cf")
+				div(class="left-padder")
+					div
+						div(class="top-controls cf")
+							input(type="text", data-ng-model="cityName", placeholder="Search content...")
+							div(class="filter-block")
+								ul
+									li Filter By:
+									li
+										a(ng-click="FilterType('')") All 
+									li
+										a(ng-click="FilterType('video')") video 
+									li
+										a(ng-click="FilterType('info')") info 
+									li
+										a(ng-click="FilterType('ppt')") ppt 
+							pagination(rotate="true", num-pages="noOfPages", current-page="currentPage", max-size="maxSize", class="pagination-small")
+						ul(class="content-listing")
+							li(data-ng-repeat="item in filteredDestinations | startFrom:(currentPage - 1)*pageSize | limitTo:pageSize | filter:filters")  
+								div(class="content-type type-{{item.type}} category-{{item.category}}") 
+									img(src="images/{{item.thumbnail}}", width="198", height="251")
+									span.type-icon
+										i
+									h4.box.item-title {{item.title}} 
+						
+						pagination(rotate="true", num-pages="noOfPages", current-page="currentPage", max-size="maxSize", class="pagination-small")
+						br 
+						

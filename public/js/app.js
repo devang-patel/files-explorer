@@ -24,6 +24,9 @@ destApp.controller('DestinationController', function ($scope, $http, $filter) {
         $scope.FilterType = function(text) {
             $scope.filteredDestinations = $filter('filter')($scope.destinations, text);
         };
+        $scope.FilterCate = function(cate) {
+            $scope.filteredDestinations = $filter('filter')($scope.destinations, cate);
+        };
 
         $scope.$watch('cityName', function (newCityName) {
             $scope.currentPage = 1;

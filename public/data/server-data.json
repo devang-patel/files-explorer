@@ -1,59 +1,115 @@
-[{
-                   "title":"Module 1",
-                   "type": "video"
+[               {
+                   "title":"Is Bitcoin the Future of Money?",
+                   "type": "ppt",
+                    "category":"finance",
+                   "thumbnail":"ppt-1.jpg",
+                    "content":""
                 },
                 {
-                   "title":"Module 2",
-                   "type": "video"
+                   "title":"50 Stunning Mobile Statistics",
+                   "type": "ppt",
+                    "category":"misc",
+                    "thumbnail":"ppt-2.jpg",
+                    "content":""
                 },
                 {
-                   "title":"Module 3",
-                   "type": "ppt"
+                   "title":"Andy Sandoz investigates Product Design",
+                   "type": "video",
+                    "category":"startups",
+                    "thumbnail":"andy-video.jpg",
+                    "content":""
                 },
                 {
-                   "title":"Module 4",
-                   "type": "ppt"
+                   "title":"Product Design | Off Book | PBS",
+                   "type": "video",
+                    "category":"Design",
+                    "thumbnail":"prod-design.jpg",
+                    "content":""
                 },
                 {
-                   "title":"Module 5",
-                   "type": "info"
+                   "title":"7 Things Great Entrepreneurs Don't Do",
+                   "type": "article",
+                    "category":"startups",
+                    "thumbnail":"do-dnt-blog.jpg",
+                    "content":""
                 },
                 {
-                   "title":"Module 6",
-                   "type": "ppt"
+                   "title":"Is Bitcoin the Future of Money?",
+                   "type": "ppt",
+                    "category":"finance",
+                   "thumbnail":"ppt-1.jpg",
+                    "content":""
                 },
                 {
-                   "title":"Module 7",
-                   "type": "ppt"
+                   "title":"50 Stunning Mobile Statistics",
+                   "type": "ppt",
+                    "category":"misc",
+                    "thumbnail":"ppt-2.jpg",
+                    "content":""
                 },
                 {
-                   "title":"Module 8",
-                   "type": "ppt"
+                   "title":"Andy Sandoz investigates Product Design",
+                   "type": "video",
+                    "category":"startups",
+                    "thumbnail":"andy-video.jpg",
+                    "content":""
                 },
                 {
-                   "title":"Module 9",
-                   "type": "ppt"
+                   "title":"Product Design | Off Book | PBS",
+                   "type": "video",
+                    "category":"Design",
+                    "thumbnail":"prod-design.jpg",
+                    "content":""
                 },
                 {
-                   "title":"Module 10",
-                   "type": "info"
+                   "title":"7 Things Great Entrepreneurs Don't Do",
+                   "type": "article",
+                    "category":"startups",
+                    "thumbnail":"do-dnt-blog.jpg",
+                    "content":""
                 },
                 {
-                   "title":"Module 11",
-                   "type": "video"
+                   "title":"Is Bitcoin the Future of Money?",
+                   "type": "ppt",
+                    "category":"finance",
+                   "thumbnail":"ppt-1.jpg",
+                    "content":""
                 },
                 {
-                   "title":"Module 12",
-                   "type": "info"
+                   "title":"50 Stunning Mobile Statistics",
+                   "type": "ppt",
+                    "category":"misc",
+                    "thumbnail":"ppt-2.jpg",
+                    "content":""
                 },
                 {
-                   "title":"Module 13",
-                   "type": "info"
+                   "title":"Andy Sandoz investigates Product Design",
+                   "type": "video",
+                    "category":"startups",
+                    "thumbnail":"andy-video.jpg",
+                    "content":""
                 },
                 {
-                   "title":"ppt 14",
-                   "type": "video"
-                },{
-                   "title":"Module 15",
-                   "type": "ppt"
-                }]
+                   "title":"Product Design | Off Book | PBS",
+                   "type": "video",
+                    "category":"Design",
+                    "thumbnail":"prod-design.jpg",
+                    "content":""
+                },
+                {
+                   "title":"7 Things Great Entrepreneurs Don't Do",
+                   "type": "article",
+                    "category":"startups",
+                    "thumbnail":"do-dnt-blog.jpg",
+                    "content":""
+                },
+                {
+                   "title":"7 Things Great Entrepreneurs Don't Do",
+                   "type": "infograph",
+                    "category":"startups",
+                    "thumbnail":"do-dnt-blog.jpg",
+                    "content":""
+                }
+                
+
+                ]
